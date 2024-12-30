@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* background: #EB5757;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #000000, #EB5757);  
+background: linear-gradient(to right, #000000, #EB5757);  */
+
+
+:root
+{
+    --background-color:#0a101e;
+    --white:#fff;
+    --black:#000;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color :var(--background-color) !important;
+    color: var(--white) !important;
+    font-family: 'Inter 18pt'!important ;
+}
+.contact a,
+.soical a,
+.nav ul li a{
+    color: var(--white) !important;
+}
+
+/* BANNER */
+.banner{
+    padding: 130px 0;
+}
+.soical {
+    margin-top: 100px;
+    padding:20px 30px;
+}
+
+/* ABOUT */
+.about,
+.portfolio,
+.skill,
+.resume{
+    padding-bottom: 100px;
+}
+.about-titel::before ,
+.resume-titel::before,
+.portfolio-titel::before,
+.skill-titel::before,
+.contact-titel::before  {
+    content: "";
+    position: absolute;
+    background-color: #3f4551;
+    width: 170px;
+    height: 2px;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.about-titel::after,
+.resume-titel::after,
+.portfolio-titel::after,
+.skill-titel::after,
+.contact-titel::after {
+    content: "";
+    position: absolute;
+    background-color: #fec544;
+    width: 70px;
+    height: 2px;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.about h2,
+.resume h2,
+.portfolio h2,
+.skill h2,
+.contact h2{
+    color: #151b2980 !important;
+    font-size: 100px !important;
+    /* position: absolute; */
+    top: 25px;
+    left: 31%;
+    
+}
+.about-content li{
+    margin-bottom: 14px;
+}
+.about-content li span:first-child {
+    display: inline-block;
+    width: 108px;
+    margin-right: -5px;
+}
+
+/* PORTFOLIO  */
+.portfolio-titel{
+    margin-bottom: 120px !important;
+}
+.services-inner{
+    background-color: #101624;
+    border-color:#232935 !important ;
+}
+.resume h2{
+    left:33%;
+}
+
+
+.portfolio{
+    padding: 100px;
+}
+
+.portfolio-titel::before{
+    left:50%;
+}
+.portfolio h2{
+    left: 25%;
+} 
+
+/* SKILL  */
+
+.skill h2{
+    left: 40%;
+}
+
+.skill-content .skill-img{
+    top: 0%;
+    right: 94.5%;
+    padding: 3px 19px;
+    align-items: center;
+}
+.skill-img i{
+    padding-top: 8px;
+}
+.skill-b{
+    padding: 4px 16px !important;
+}
+
+/* CONTACT  */
+.contact h2{
+    left: 23%;
+}
+
+form input,textarea{
+    background-color: #101624 !important;
+    color: #a9adb8 !important;  
+    border-color: rgb(35, 41, 53) !important;  
+}
+textarea{
+    height: 100px; 
+}
+
+/* FOOTER  */
+footer{
+    background:#151b2980;
+}
